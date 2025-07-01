@@ -1,91 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mindcraft Learning creates smart Android apps for fun, learning, and productivity. Explore our 5 top-rated apps now." />
+  <meta name="description"
+    content="Mindcraft Learning creates smart Android apps for fun, learning, and productivity. Explore our 5 top-rated apps now." />
   <meta name="keywords" content="Android apps, quiz app, random picker, coding app, trivia game, mindcraft learning" />
   <meta name="author" content="Mindcraft Learning" />
   <title>Mindcraft Learning - Android App Studio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: sans-serif;
       margin: 0;
       padding: 0;
-      background: #f8f9fa;
+      background: #f3f3f3;
       color: #333;
     }
+
     header {
       background: #0b3d91;
       color: #fff;
       padding: 2rem 1rem;
       text-align: center;
     }
+
     header h1 {
       margin: 0;
       font-size: 2rem;
     }
+
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
       padding: 2rem 1rem;
     }
+
     .app-card {
       background: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 3rem;
       overflow: hidden;
-      display: flex;
-      flex-direction: column;
     }
-    .app-card img.feature {
+
+    .feature {
       width: 100%;
-      height: auto;
+      display: block;
     }
+
+    .app-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .app-header img.icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .app-header .title-block h2 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .app-header .title-block p {
+      margin: 0.3rem 0 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
     .app-content {
       padding: 1rem;
     }
-    .app-content h2 {
-      margin-top: 0;
-    }
+
     .app-content p {
       margin: 0.5rem 0;
     }
+
     .features {
       margin-top: 1rem;
     }
+
     .features li {
       margin-bottom: 0.3rem;
     }
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.6rem 1rem;
-      background: #0b3d91;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .screenshots {
-      display: flex;
+
+    .screenshots-carousel {
       overflow-x: auto;
+      white-space: nowrap;
       padding-top: 1rem;
-      gap: 10px;
+      padding-bottom: 1rem;
     }
-    .screenshots img {
-      height: 180px;
-      border-radius: 6px;
-      flex-shrink: 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    .screenshots-carousel img {
+      height: 300px;
+      border-radius: 10px;
+      margin-right: 10px;
+      display: inline-block;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
+
     .video-container {
       margin-top: 1rem;
       position: relative;
       padding-bottom: 56.25%;
       height: 0;
       overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
     .video-container iframe {
       position: absolute;
       top: 0;
@@ -94,26 +127,26 @@
       height: 100%;
       border: none;
     }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #0b3d91;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
       font-size: 0.9rem;
       color: #555;
     }
-    @media (min-width: 768px) {
-      .app-card {
-        flex-direction: row;
-      }
-      .app-card img.feature {
-        width: 300px;
-        height: auto;
-      }
-      .app-content {
-        flex: 1;
-      }
-    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -139,28 +172,28 @@
         "category": "Entertainment",
         "techStack": ["React Native", "Expo", "Firebase"],
         "features": [
-            "Create unlimited custom wheels",
-            "Customize colors and styles",
-            "Save and manage wheels",
-            "Haptic feedback and sound effects"
+          "Create unlimited custom wheels",
+          "Customize colors and styles",
+          "Save and manage wheels",
+          "Haptic feedback and sound effects"
         ],
         "icon": "icon.png",
         "featureGraphic": "feature-graphic.png",
         "screenshots": [
-            "screenshot_1.png",
-            "screenshot_2.png",
-            "screenshot_3.png",
-            "screenshot_4.png",
-            "screenshot_5.png",
-            "screenshot_6.png",
-            "screenshot_7.png",
-            "screenshot_8.png"
+          "screenshot_1.png",
+          "screenshot_2.png",
+          "screenshot_3.png",
+          "screenshot_4.png",
+          "screenshot_5.png",
+          "screenshot_6.png",
+          "screenshot_7.png",
+          "screenshot_8.png"
         ],
         "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mindcraftlearning.spinthewheel",
         "tutorialVideoUrl": ""
-    },
+      },
 
-    {
+      {
         "id": 2,
         "slug": "question-games",
         "title": "Question Games: Get to Know Me",
@@ -169,28 +202,28 @@
         "category": "Lifestyle",
         "techStack": ["React Native", "Expo", "Firebase"],
         "features": [
-            "Thousands of curated questions",
-            "Different categories and game modes",
-            "Bookmark your favorite questions",
-            "Minimal, clean interface"
+          "Thousands of curated questions",
+          "Different categories and game modes",
+          "Bookmark your favorite questions",
+          "Minimal, clean interface"
         ],
         "icon": "icon.png",
         "featureGraphic": "feature-graphic.png",
         "screenshots": [
-            "screenshot_1.png",
-            "screenshot_2.png",
-            "screenshot_3.png",
-            "screenshot_4.png",
-            "screenshot_5.png",
-            "screenshot_6.png",
-            "screenshot_7.png",
-            "screenshot_8.png"
+          "screenshot_1.png",
+          "screenshot_2.png",
+          "screenshot_3.png",
+          "screenshot_4.png",
+          "screenshot_5.png",
+          "screenshot_6.png",
+          "screenshot_7.png",
+          "screenshot_8.png"
         ],
         "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mindcraftlearning.questiongames",
         "tutorialVideoUrl": ""
-    },
+      },
 
-    {
+      {
         "id": 3,
         "slug": "cheezylines",
         "title": "Cheesy Lines: So Bad, It Works",
@@ -199,27 +232,27 @@
         "category": "Entertainment",
         "techStack": ["React Native", "Expo"],
         "features": [
-            "Hundreds of funny pickup lines",
-            "Copy and share easily",
-            "Simple and fun UI"
+          "Hundreds of funny pickup lines",
+          "Copy and share easily",
+          "Simple and fun UI"
         ],
         "icon": "icon.png",
         "featureGraphic": "feature-graphic.png",
         "screenshots": [
-            "screenshot_1.png",
-            "screenshot_2.png",
-            "screenshot_3.png",
-            "screenshot_4.png",
-            "screenshot_5.png",
-            "screenshot_6.png",
-            "screenshot_7.png",
-            "screenshot_8.png"
+          "screenshot_1.png",
+          "screenshot_2.png",
+          "screenshot_3.png",
+          "screenshot_4.png",
+          "screenshot_5.png",
+          "screenshot_6.png",
+          "screenshot_7.png",
+          "screenshot_8.png"
         ],
         "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mindcraftlearning.cheezylines",
         "tutorialVideoUrl": ""
-    },
+      },
 
-    {
+      {
         "id": 4,
         "slug": "code-respite",
         "title": "CodeRespite: Refresh Your Tech Skills",
@@ -228,28 +261,28 @@
         "category": "Productivity",
         "techStack": ["React Native", "Expo", "Firebase"],
         "features": [
-            "Quick coding challenges",
-            "Mindful break reminders",
-            "Track progress",
-            "Simple, focused design"
+          "Quick coding challenges",
+          "Mindful break reminders",
+          "Track progress",
+          "Simple, focused design"
         ],
         "icon": "icon.png",
         "featureGraphic": "feature-graphic.png",
         "screenshots": [
-            "screenshot_1.png",
-            "screenshot_2.png",
-            "screenshot_3.png",
-            "screenshot_4.png",
-            "screenshot_5.png",
-            "screenshot_6.png",
-            "screenshot_7.png",
-            "screenshot_8.png"
+          "screenshot_1.png",
+          "screenshot_2.png",
+          "screenshot_3.png",
+          "screenshot_4.png",
+          "screenshot_5.png",
+          "screenshot_6.png",
+          "screenshot_7.png",
+          "screenshot_8.png"
         ],
         "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mindcraftlearning.coderespite",
         "tutorialVideoUrl": ""
-    },
+      },
 
-    {
+      {
         "id": 5,
         "slug": "trivia-quest-ai",
         "title": "Trivia Quest AI: Fun Quiz Game",
@@ -258,26 +291,26 @@
         "category": "Education",
         "techStack": ["React Native", "Expo", "Firebase", "AI Integration"],
         "features": [
-            "AI-generated trivia questions",
-            "Multiple categories",
-            "Fun for all ages",
-            "Learn new facts every day"
+          "AI-generated trivia questions",
+          "Multiple categories",
+          "Fun for all ages",
+          "Learn new facts every day"
         ],
         "icon": "icon.png",
         "featureGraphic": "feature-graphic.png",
         "screenshots": [
-            "screenshot_1.png",
-            "screenshot_2.png",
-            "screenshot_3.png",
-            "screenshot_4.png",
-            "screenshot_5.png",
-            "screenshot_6.png",
-            "screenshot_7.png"
+          "screenshot_1.png",
+          "screenshot_2.png",
+          "screenshot_3.png",
+          "screenshot_4.png",
+          "screenshot_5.png",
+          "screenshot_6.png",
+          "screenshot_7.png"
         ],
         "playStoreUrl": "https://play.google.com/store/apps/details?id=com.coderespite.triviaquestai",
         "tutorialVideoUrl": "https://www.youtube.com/embed/sjij5LvqaE8"
-    }
-];
+      }
+    ];
 
     const container = document.getElementById('app-list');
 
@@ -287,16 +320,21 @@
 
       const content = `
         <img class="feature" src="./images/${app.slug}/${app.featureGraphic}" alt="${app.title} feature graphic">
+        <div class="app-header">
+          <img class="icon" src="./images/${app.slug}/${app.icon}" alt="${app.title} icon">
+          <div class="title-block">
+            <h2>${app.title}</h2>
+            <p>${app.category}</p>
+          </div>
+        </div>
         <div class="app-content">
-          <h2>${app.title}</h2>
-          <p><strong>Category:</strong> ${app.category}</p>
           <p>${app.shortDescription}</p>
           <p>${app.longDescription}</p>
           <p><strong>Built With:</strong> ${app.techStack.join(', ')}</p>
           <ul class="features">
             ${app.features.map(f => `<li>${f}</li>`).join('')}
           </ul>
-          <div class="screenshots">
+          <div class="screenshots-carousel">
             ${app.screenshots.map(s => `<img src="./images/${app.slug}/${s}" alt="Screenshot">`).join('')}
           </div>
           ${app.tutorialVideoUrl ? `<div class="video-container"><iframe src="${app.tutorialVideoUrl}" allowfullscreen></iframe></div>` : ''}
@@ -310,4 +348,5 @@
   </script>
 
 </body>
+
 </html>
