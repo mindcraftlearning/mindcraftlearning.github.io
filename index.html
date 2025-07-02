@@ -23,15 +23,75 @@
     }
 
     header {
-      background: #0b3d91;
-      color: #fff;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #e0e0e0;
     }
+
+    .featureTitle {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+
+    .intro-content {
+      max-width: 800px;
+      margin: auto;
+      padding: 0 1rem;
+    }
+
+    .intro-content .icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+
+    .intro-content h1 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+      color: #0b3d91;
+      font-weight: 600;
+    }
+
+
+
+    .intro-desc {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 1.5rem;
+      font-weight: 500;
+    }
+
+    .intro-content p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .links a {
+      color: #0b3d91;
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
 
     header h1 {
       margin: 0;
       font-size: 2rem;
+    }
+
+    .short-desc {
+
+      font-size: 0.95rem;
+      color: #555;
+      margin: 0.5rem 0;
+      padding-bottom: 1rem;
+      font-weight: 500;
     }
 
     .container {
@@ -53,6 +113,8 @@
       display: block;
     }
 
+
+
     .app-header {
       display: flex;
       align-items: center;
@@ -61,8 +123,8 @@
     }
 
     .app-header img.icon {
-      width: 72px;
-      height: 72px;
+      width: 100px;
+      height: 100px;
       border-radius: 12px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
@@ -76,6 +138,72 @@
       margin: 0.3rem 0 0;
       font-size: 0.9rem;
       color: #555;
+    }
+
+    .developer-info {
+      display: flex;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .name-tagline {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+    }
+
+    .name-tagline h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .name-tagline p.tagline {
+      margin: 0.3rem 0 0;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+
+
+
+    }
+
+
+    .about-section {
+
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      text-align: left;
+    }
+
+    .about-section p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.6;
+      margin: 1rem 0;
+    }
+
+    .about-section a {
+      color: #0b3d91;
+      text-decoration: underline;
+      font-weight: 500;
+    }
+
+    .developer-info .icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     }
 
     .app-content {
@@ -150,9 +278,62 @@
 <body>
 
   <header>
-    <h1>Mindcraft Learning</h1>
-    <p>Smart & Fun Android Apps for Everyone</p>
+    <img class="featureTitle" src="./images/header_image.png" alt="Mindcraft Learning feature graphic">
+
+    <div class="intro-content">
+      <div class="developer-info">
+
+        <img class="icon" src="./images/logo.png" alt="Mindcraft Learning icon">
+        <div class="name-tagline">
+
+          <h1>Mindcraft Learning</h1>
+          <p class="tagline">Turning Ideas Into Delightful Apps</p>
+        </div>
+
+      </div>
+      <div class="about-section">
+        <p><strong>About Us:</strong></p>
+
+        <p class="intro-desc">Explore our top-rated Android apps for fun, learning, and productivity. Built with React
+          Native and Expo for smooth performance and delightful UX.</p>
+        <p><strong>What We Build:</strong></p>
+
+        <p>Mindcraft Learning is an Android app studio dedicated to creating innovative and engaging applications
+          that
+          enhance everyday life. Our apps are designed to be user-friendly, fun, and educational—perfect for all
+          ages.</p>
+        <p><strong>Why Mindcraft Learning?</strong></p>
+
+        <p>Whether you're looking for a fun game, a productivity tool, or an educational resource, Mindcraft
+          Learning has
+          something for everyone. Discover how we help you make the most of your Android device.</p>
+        <p><strong>Connect With Us:</strong></p>
+
+        <p class="links">
+          For more info, visit
+          <a href="https://your-website.com" target="_blank">our website</a>
+          or follow us on
+          <a href="https://github.com/mindcraftlearning" target="_blank">GitHub</a>.
+        </p>
+      </div>
+
+      <p>Check out our apps below to see how we can enhance your Android experience!</p>
+
+      <p>Explore our apps on the Google Play Store:</p>
+      <p class="links">
+        <a href="https://play.google.com/store/apps/dev?id=9125804892178700830" target="_blank">Mindcraft Learning
+          Play Store</a>
+      </p>
+      <p>For inquiries, contact us at <a href="mailto:mindcraftlearning97@gmail.com" class="email-link"
+          target="_blank">mindcraftlearning97@gmail.com</a>
+
+
+
+
+
+    </div>
   </header>
+
 
   <main class="container" id="app-list">
     <!-- App cards will be rendered here by JavaScript -->
@@ -324,21 +505,29 @@
           <img class="icon" src="./images/${app.slug}/${app.icon}" alt="${app.title} icon">
           <div class="title-block">
             <h2>${app.title}</h2>
-            <p>${app.category}</p>
+            
+                                <a href="${app.playStoreUrl}" class="btn" target="_blank">View on Play Store</a>
+
+
           </div>
+          
         </div>
         <div class="app-content">
-          <p>${app.shortDescription}</p>
-          <p>${app.longDescription}</p>
+                                <p class="short-desc">${app.shortDescription}</p>
+
           <p><strong>Built With:</strong> ${app.techStack.join(', ')}</p>
+          <p><strong>Features:</strong></p>
+
           <ul class="features">
             ${app.features.map(f => `<li>${f}</li>`).join('')}
           </ul>
+          <p><strong>Description:</strong></p>
+                    <p>${app.longDescription}</p>
+
           <div class="screenshots-carousel">
             ${app.screenshots.map(s => `<img src="./images/${app.slug}/${s}" alt="Screenshot">`).join('')}
           </div>
           ${app.tutorialVideoUrl ? `<div class="video-container"><iframe src="${app.tutorialVideoUrl}" allowfullscreen></iframe></div>` : ''}
-          <a href="${app.playStoreUrl}" class="btn" target="_blank">View on Play Store</a>
         </div>
       `;
 
